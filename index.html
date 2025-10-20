@@ -57,8 +57,7 @@ section.extra h3 { margin-bottom:10px; color:var(--acento); font-size:1.2rem; te
 section.extra iframe, section.extra img, section.extra div { display:block; margin:0 auto 15px; max-width:100%; }
 .whatsapp-btn { cursor:pointer; display:block; width:100%; border-radius:10px; }
 .whatsapp-text { text-align:center; font-weight:bold; margin-bottom:20px; }
-.weather { text-align:center; margin:20px 0; }
-footer { text-align:center; padding:20px; background:var(--encabezado); color:#fff; margin-top:20px; border-radius:8px; }
+.footer { text-align:center; padding:20px; background:var(--encabezado); color:#fff; margin-top:20px; border-radius:8px; }
 </style>
 </head>
 <body>
@@ -94,15 +93,15 @@ footer { text-align:center; padding:20px; background:var(--encabezado); color:#f
             <a href="#" class="youtube"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YT">YouTube</a>
         </div>
 
-        <!-- Clima -->
-        <div class="weather">
-            <iframe src="https://forecast7.com/en/9d93n83d1/costa-rica/" width="100%" height="150" frameborder="0"></iframe>
+        <!-- Clima funcional con enlace -->
+        <div class="weather" style="text-align:center; margin:20px 0;">
+            <iframe src="https://www.meteored.cr/tiempo-en_Naranjo-America+Central-Costa+Rica-Alajuela--1-19579.html" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <!-- Derechos reservados -->
-        <footer>
+        <div class="footer">
             © 2025 NOVA MEDIA STREAM GT. Todos los derechos reservados.
-        </footer>
+        </div>
     </main>
 
     <aside>
@@ -121,7 +120,7 @@ footer { text-align:center; padding:20px; background:var(--encabezado); color:#f
 
         <section class="extra">
             <h3>HORA ACTUAL DEL PAÍS</h3>
-            <div style="text-align:center;padding:1em 0;">
+            <div style="text-align:center; padding:1em 0;">
                 <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FCosta_Rica" width="100%" height="115" frameborder="0" seamless></iframe>
             </div>
         </section>
