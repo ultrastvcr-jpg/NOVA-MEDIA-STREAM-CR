@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA MEDIA STREAM GT WEB</title>
+<style>
+:root {
+    --fondo: #ffffff;
+    --texto: #000000;
+    --encabezado: #000000;
+    --acento: #00bcd4;
+    --fondo-sec: #f9f9f9;
+}
+body.dark {
+    --fondo: #121212;
+    --texto: #e0e0e0;
+    --encabezado: #000000;
+    --fondo-sec: #1e1e1e;
+}
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+body { background-color:var(--fondo); color:var(--texto); line-height:1.6; }
+header {
+    background-color:var(--encabezado);
+    color:var(--acento);
+    padding:20px;
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:bold;
+    position:relative;
+}
+.theme-toggle {
+    position:absolute; right:20px; top:20px;
+    background:var(--acento); color:#fff;
+    border:none; padding:10px 15px; border-radius:8px;
+    cursor:pointer; font-weight:bold;
+}
+.container { display:flex; max-width:1200px; margin:0 auto; padding:20px; gap:20px; }
+main { flex:3; }
+aside { flex:1; }
+h1.channel-name { font-size:2rem; text-align:center; margin:20px 0; color:var(--acento); }
+.social-btns { display:flex; justify-content:center; gap:10px; margin-bottom:20px; flex-wrap:wrap; }
+.social-btns a {
+    display:flex; align-items:center; gap:8px;
+    padding:10px 15px; text-decoration:none;
+    color:#fff; border-radius:5px; font-weight:bold;
+}
+.facebook { background:#3b5998; }
+.twitter { background:#1da1f2; }
+.instagram { background:#e4405f; }
+.youtube { background:#ff0000; }
+.social-btns img { width:20px; height:20px; }
+.logo-channel { display:block; margin:0 auto 20px; width:200px; border-radius:10px; }
+iframe.video { width:100%; max-width:852px; height:480px; display:block; margin:0 auto 20px; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,0.3); }
+section.extra { background:var(--fondo-sec); margin-bottom:20px; padding:20px; border-radius:10px; }
+section.extra h3 { margin-bottom:10px; color:var(--acento); font-size:1.2rem; text-align:center; }
+section.extra iframe, section.extra img, section.extra div { display:block; margin:0 auto 15px; max-width:100%; }
+.whatsapp-btn { cursor:pointer; display:block; width:100%; border-radius:10px; }
+.whatsapp-text { text-align:center; font-weight:bold; margin-bottom:20px; }
+.weather { text-align:center; margin:20px 0; }
+footer { text-align:center; padding:20px; background:var(--encabezado); color:#fff; margin-top:20px; border-radius:8px; }
+</style>
+</head>
+<body>
+
+<header>
+    NOVA MEDIA STREAM GT
+    <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">🌙/☀️</button>
+</header>
+
+<div class="container">
+    <main>
+        <h1 class="channel-name">ULTRAS TV EN VIVO</h1>
+
+        <!-- Botones de redes sociales arriba del logo -->
+        <div class="social-btns">
+            <a href="#" class="facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="FB">Facebook</a>
+            <a href="#" class="twitter"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="X">X</a>
+            <a href="#" class="instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG">Instagram</a>
+            <a href="#" class="youtube"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YT">YouTube</a>
+        </div>
+
+        <!-- Logo del canal -->
+        <img src="https://i.imgur.com/QJPBtYD.png" alt="Logo ULTRAS TV" class="logo-channel">
+
+        <!-- Reproductor del canal -->
+        <iframe src="https://ssh101.com/securelive/index.php?id=09072000" class="video" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Botones de redes sociales debajo del reproductor -->
+        <div class="social-btns">
+            <a href="#" class="facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="FB">Facebook</a>
+            <a href="#" class="twitter"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="X">X</a>
+            <a href="#" class="instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="IG">Instagram</a>
+            <a href="#" class="youtube"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YT">YouTube</a>
+        </div>
+
+        <!-- Clima -->
+        <div class="weather">
+            <iframe src="https://forecast7.com/en/9d93n83d1/costa-rica/" width="100%" height="150" frameborder="0"></iframe>
+        </div>
+
+        <!-- Derechos reservados -->
+        <footer>
+            © 2025 NOVA MEDIA STREAM GT. Todos los derechos reservados.
+        </footer>
+    </main>
+
+    <aside>
+        <section class="extra">
+            <h3>CHAT EN VIVO NOVA MEDIA STREAM GT</h3>
+            <iframe src="https://www3.cbox.ws/box/?boxid=3549758&boxtag=NvgBi7" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" scrolling="auto"></iframe>
+        </section>
+
+        <section class="extra">
+            <h3>SERVICIO DE IPTV Y MAS</h3>
+            <a href="https://wa.me/50663055368" target="_blank">
+                <img src="https://i.imgur.com/QWbIVnD.jpeg" alt="Contacto WhatsApp" class="whatsapp-btn">
+            </a>
+            <div class="whatsapp-text">ESCRÍBANOS PARA MÁS INFORMACIÓN — CLICK EN LA IMAGEN</div>
+        </section>
+
+        <section class="extra">
+            <h3>HORA ACTUAL DEL PAÍS</h3>
+            <div style="text-align:center;padding:1em 0;">
+                <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FCosta_Rica" width="100%" height="115" frameborder="0" seamless></iframe>
+            </div>
+        </section>
+
+        <section class="extra">
+            <h3>CONTADOR DE VISITAS</h3>
+            <div>
+                <a href='http://www.freevisitorcounters.com'>Contador</a>
+                <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=8c6c1ca7f8bcfae8071fc179c2bf7db843e7b046'></script>
+                <script type="text/javascript" src='https://www.freevisitorcounters.com/en/home/counter/1415705/t/0'></script>
+            </div>
+        </section>
+    </aside>
+</div>
+
+</body>
+</html>
